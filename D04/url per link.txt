@@ -1,0 +1,1 @@
+javascript:var myWindow =window.open('https://www.nasa.gov','_blank');
