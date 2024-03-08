@@ -1,0 +1,6 @@
+#APP_USER# -- vecchia notazione frontend
+&APP_USER. -- nuova notazione frontend
+
+:APP_USER  -- notazione lato server (sql o plsql)
+v('APP_USER') -- equivalente alla precedente testo
+nv('APP_USER') -- equivalente alla precedente numero
