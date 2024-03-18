@@ -7,10 +7,10 @@ insert into EMP ( EMPNO
                  ,COMM
                  ,DEPTNO ) 
          values ( 8000,
-                 ,'BIANCHI',
-                 ,'IMPIEGATO',
+                 ,'BIANCHI'
+                 ,'IMPIEGATO'
                  ,7782
-                 ,date'2024-18-03',
+                 ,date'2024-18-03'
                  ,1500
                  ,null
                  ,10 ); 
