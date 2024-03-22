@@ -1,12 +1,12 @@
-tipo prodotto
-  tipo prodotto vc50 /nn /unique
+tipo_prodotto
+  tipo_prodotto vc50 /nn /unique
   gruppo vc50 /nn
 
 prodotto
   prodotto vc50 /nn /unique
   prezzo acquisto num /nn
   prezzo vendita num /nn
-  tipo_prodotto_id /nn
+  tipo_prodotto id /nn
 
 cliente
   cliente vc50 /nn /unique
@@ -18,14 +18,14 @@ fornitore
 
 acquisto
   data date /nn
-  fornitore_id /nn
-  prodotto_id /nn
+  fornitore id /nn
+  prodotto id /nn
   quantita num /nn
 
 vendita
   data date /nn
-  cliente_id  /nn
-  prodotto_id /nn
+  cliente id  /nn
+  prodotto id /nn
   quantita num /nn
 
-# settings = { prefix: "D08" }
+# settings = { prefix: "D08" }  
