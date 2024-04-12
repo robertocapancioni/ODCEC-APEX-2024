@@ -20,7 +20,8 @@ select v.id,
        p.tipo_prodotto_id,
        tp.tipo_prodotto,
        v.data,
-       v.quantita
+       v.quantita,
+       v.quantita * p.prezzo_vendita valore
   from d08_vendita v
   join d08_cliente c on v.cliente_id = c.id 
   join d08_prodotto p on v.prodotto_id = p.id
