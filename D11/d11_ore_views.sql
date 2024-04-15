@@ -105,7 +105,7 @@ select to_char(data,'YYYY') anno,
   from d11_ore_vw
  group by to_char(data,'YYYY');
 
-select to_char(data,'YYYY-MM') anno,
+select to_char(data,'YYYY-MM') anno_mese,
        sum(ore)ore,
        sum(costo)costo,
        case when sum(ore)<> 0 
@@ -115,7 +115,7 @@ select to_char(data,'YYYY-MM') anno,
   from d11_ore_vw
  group by to_char(data,'YYYY-MM');
 
-select to_char(data,'YYYY-Q') anno,
+select to_char(data,'YYYY-Q') anno_trimestre,
        sum(ore)ore,
        sum(costo)costo,
        case when sum(ore)<> 0 
