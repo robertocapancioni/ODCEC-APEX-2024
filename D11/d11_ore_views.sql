@@ -104,3 +104,23 @@ select to_char(data,'YYYY') anno,
              end costo_orario_medio  
   from d11_ore_vw
  group by to_char(data,'YYYY');
+
+select to_char(data,'YYYY-MM') anno,
+       sum(ore)ore,
+       sum(costo)costo,
+       case when sum(ore)<> 0 
+            then round(sum(costo)/sum(ore),2)
+            else 0 
+             end costo_orario_medio  
+  from d11_ore_vw
+ group by to_char(data,'YYYY-MM');
+
+select to_char(data,'YYYY-Q') anno,
+       sum(ore)ore,
+       sum(costo)costo,
+       case when sum(ore)<> 0 
+            then round(sum(costo)/sum(ore),2)
+            else 0 
+             end costo_orario_medio  
+  from d11_ore_vw
+ group by to_char(data,'YYYY-Q');
