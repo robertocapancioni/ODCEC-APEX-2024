@@ -85,3 +85,12 @@ select nome,
   from d11_ore_vw
  group by data;
 
+select progetto,cliente,
+       sum(ore)ore,
+       sum(costo)costo,
+       case when sum(ore)<> 0 
+            then round(sum(costo)/sum(ore),2)
+            else 0 
+             end costo_orario_medio  
+  from d11_ore_vw
+ group by progetto,cliente;
