@@ -7,14 +7,14 @@ select
      ta.TIPO_APPUNTAMENTO, 
       a.NOME_ID,
       n.NOME,
+      a.DESCRIZIONE||' - '||n.NOME||' - '||ta.TIPO_APPUNTAMENTO DESCRIZIONE_EXT,
       case ta.TIPO_APPUNTAMENTO
-          when 'Primo Appuntamento'  then 'apex-cal-red'
-          when 'Altro Appuntamento'  then 'apex-cal-blue'
-          when 'Ultimo Appuntamento' then 'apex-cal-green'
+          when 'Primo Appuntamento'  then 'u-color-1'
+          when 'Altro Appuntamento'  then 'u-color-9'
+          when 'Ultimo Appuntamento' then 'u-color-31'
       end CLASSE_COLORE
  from D12_APPUNTAMENTO a
- join D12_TIPO_APPUNTAMENTO ta
-   on a.TIPO_APPUNTAMENTO_ID = 
-     ta.TIPO_APPUNTAMENTO_ID
- join D12_NOME n
+ left join D12_TIPO_APPUNTAMENTO ta
+   on a.TIPO_APPUNTAMENTO_ID = ta.TIPO_APPUNTAMENTO_ID
+ left join D12_NOME n
    on a.NOME_ID = n.NOME_ID
