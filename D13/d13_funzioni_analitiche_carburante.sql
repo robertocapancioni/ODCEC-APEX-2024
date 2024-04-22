@@ -10,7 +10,7 @@ select targa,
        litri,
        km_progr,
        sum(litri)    over(partition by targa) litri_totali,
-       sum(km_progr) over(partition by targa) km_totali
+       max(km_progr) over(partition by targa) km_totali
   from d13_carburante;
 
 select targa,
