@@ -76,5 +76,5 @@ fattura_dettaglio
 #ondelete:restrict
 #drop:true
 
-# settings = { prefix: "D19", onDelete: "RESTRICT", semantics: "CHAR", drop: true, language: "EN", APEX: true }
+# settings = { prefix: "D13", onDelete: "RESTRICT", semantics: "CHAR", drop: true, language: "EN", APEX: true }
 */
