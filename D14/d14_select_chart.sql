@@ -4,7 +4,7 @@ with acquisto_grp as(
          to_char(data,'YYYY-MM') anno_mese,
          sum(quantita)quantita, 
          sum(valore)valore 
-    from x01_acquisto_vw
+    from d08_acquisto_vw
    group by prodotto_id,prodotto,to_char(data,'YYYY'),to_char(data,'YYYY-MM')
 )
  select v.*,
@@ -20,7 +20,7 @@ with acquisto_grp as(
          to_char(data,'YYYY-MM') anno_mese,
          sum(quantita)quantita, 
          sum(valore)valore 
-    from x01_vendita_vw
+    from d08_vendita_vw
    group by prodotto_id,prodotto,to_char(data,'YYYY'),to_char(data,'YYYY-MM')
 )
  select v.*,
