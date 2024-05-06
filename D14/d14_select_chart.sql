@@ -11,7 +11,7 @@ with acquisto_grp as(
   sum(quantita) over (partition by prodotto_id order by anno_mese) quantita_prog,
   sum(valore) over (partition by prodotto_id order by anno_mese) valore_prog
   from acquisto_grp v
-  where prodotto_id = :P18_ID
+  where prodotto_id = :P15_ID
   order by anno_mese;
 
   with vendita_grp as(
@@ -27,5 +27,5 @@ with acquisto_grp as(
   sum(quantita) over (partition by prodotto_id order by anno_mese) quantita_prog,
   sum(valore) over (partition by prodotto_id order by anno_mese) valore_prog
   from vendita_grp v
-  where prodotto_id = :P18_ID
+  where prodotto_id = :P15_ID
   order by anno_mese;
