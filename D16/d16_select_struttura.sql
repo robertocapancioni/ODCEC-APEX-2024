@@ -8,7 +8,7 @@ select 1 -  connect_by_isleaf status,
             else 'fa fa-folders'
        end  as icon, 
        empno as value, 
-       empno as tooltip, 
+       ename as tooltip, 
        null as link 
 from emp
 start with mgr is null
