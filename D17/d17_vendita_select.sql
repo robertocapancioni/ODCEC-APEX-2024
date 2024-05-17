@@ -35,3 +35,8 @@ SELECT PRODOTTO, COUNT(*) VALUE
                 tipo_prodotto r 
            from D17_vendita
           order by 1
+
+  -- query per la nuova casella combinata
+select distinct tipo_prodotto 
+  from d17_vendita 
+  order by 1
