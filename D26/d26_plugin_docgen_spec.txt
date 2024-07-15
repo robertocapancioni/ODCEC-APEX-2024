@@ -1,0 +1,7 @@
+eu-milan-1
+ocid1.fnfunc.oc1.eu-milan-1.aaaaaaaa3l43uwzph7gqxyzhscdfxo46opzhoixrpavgipo6hkldozhbf6tq
+
+axg5wecdgyae
+DocGen-bucket
+out/
+template/
