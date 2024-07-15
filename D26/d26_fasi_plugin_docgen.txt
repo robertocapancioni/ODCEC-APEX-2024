@@ -1,0 +1,5 @@
+1) Caricare il plugin nell applicazione
+2) Creare un template Word
+3) Caricare il template word in file statici sotto directory "templates"
+4) Creare una query che restituisca un documento JSON
+5) Popolare il plugin con il template caricato in 3) e con la query definita in 4)
