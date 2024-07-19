@@ -55,3 +55,8 @@ BEGIN
     where id = :APEX$ITEM_ID;
     --Raise_Application_Error (-20001, 'my error');                   
 END;
+
+
+
+-- select list nella hom dell'applicativo kanban
+select distinct progetto D,progetto R from d27_attivita order by 1
