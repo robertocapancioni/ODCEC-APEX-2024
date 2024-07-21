@@ -9,7 +9,9 @@ stato /unique cod_stato
 attivita /unique cod_attivita
   cod_attivita vc30 /nn
   attivita vc100 /nn
-  per_completamento int /nn
+  perc_completamento int /nn
+  data_scadenza_prevista d /nn
+  data_chiusura d /nn
   stato id /nn
   cliente id /nn
 
