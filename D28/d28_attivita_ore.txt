@@ -24,6 +24,7 @@ persona /unique cod_persona
 tariffa /unique cod_tariffa
   cod_tariffa vc30 /nn
   tariffa vc100 /nn
+  valore num /nn
 
 persona_tariffa /unique persona_id,data_fine
   persona id /nn /cascade
