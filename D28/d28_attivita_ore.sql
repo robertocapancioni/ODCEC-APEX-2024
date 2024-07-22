@@ -49,7 +49,7 @@ create table d28_attivita (
     attivita                  varchar2(100 char) not null,
     perc_completamento        integer not null,
     data_scadenza_prevista    date not null,
-    data_chiusura             date not null,
+    data_chiusura             date,
     created                   date not null,
     created_by                varchar2(255 char) not null,
     updated                   date not null,
@@ -301,7 +301,7 @@ attivita /unique cod_attivita
   attivita vc100 /nn
   perc_completamento int /nn
   data_scadenza_prevista d /nn
-  data_chiusura d /nn
+  data_chiusura d
   stato id /nn
   cliente id /nn
 
