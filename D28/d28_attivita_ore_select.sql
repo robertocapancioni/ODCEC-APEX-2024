@@ -4,7 +4,8 @@ select
        nvl(sum(ore),0)ore,
        nvl(sum(importo),0)importo 
   from d28_ore_vw
-  where cliente_id = :P18_ID;
+  where cliente_id = :P18_ID
+    and cod_tipo='CONSUNTIVO';
 
 
 -- Cliente Persone Area
@@ -16,4 +17,5 @@ select PERSONA_ID,
        sum(importo)importo 
   from d28_ore_vw
  where cliente_id = :P18_ID
+   and cod_tipo='CONSUNTIVO'
 group by PERSONA_ID,COD_PERSONA,PERSONA;
